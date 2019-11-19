@@ -12,33 +12,41 @@ public class BuildCity : MonoBehaviour
 
      void Start()
     {
+        float seed = Random.Range(0,100);
+        Debug.Log(seed);
         for(int h = 0; h< mapHeight; h++)
         {
             for(int w = 0; w < mapWidth; w++)
             {
                
-                int result = (int) (Mathf.PerlinNoise(w/10.0f, h/10.0f) * 10);  // Needs a Height and width in this Function
+                int result = (int) (Mathf.PerlinNoise(w/10.0f +seed , h/10.0f + seed) * 10);  // Needs a Height and width in this Function
                 Vector3 pos = new Vector3(w *buildingFootprint, 0, h* buildingFootprint);
                 if (result < 2)
                 
                     Instantiate(buildings[0], pos, Quaternion.identity);  //Instantiate Number of buildings Postion and Rotations
 
-                else if(result< 4)
+                else if(result< 3)
                 
                     Instantiate(buildings[1], pos, Quaternion.identity);
                 
-                else if (result < 6)
+                else if (result < 5)
                 
                     Instantiate(buildings[2], pos, Quaternion.identity);
 
-                else if (result < 8)
+                else if (result < 6)
                 
                     Instantiate(buildings[3], pos, Quaternion.identity);
 
-                else if (result < 10)
+                else if (result < 7)
                 
                     Instantiate(buildings[4], pos, Quaternion.identity);
+
+                else if (result< 10)
                 
+                 Instantiate(buildings[5], pos, Quaternion.identity);
+
+                
+
             }
 
         }
