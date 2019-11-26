@@ -16,9 +16,10 @@ public class BuildCity : MonoBehaviour
 
     void Start()
     {
+        int seed = Random.Range(0,100);
+        Debug.Log(seed);
         //GENERATE MAP DATA
         mapgrid = new int[mapWidth, mapHeight]; // We want to create a grid the is aware of the Size of the grid
-
 
 
         for (int h = 0; h < mapHeight; h++)
@@ -41,14 +42,38 @@ public class BuildCity : MonoBehaviour
             if (x >= mapWidth) break;
         }
 
-        float seed = Random.Range(0,100);
-        Debug.Log(seed);
-        for (int h = 0; h < mapHeight; h++)
+
+        //CROSSROADS
+        int z = 0;
+        for(int n = 0; n < 10 ;n++)
         {
             for (int w = 0; w < mapWidth; w++)
             {
+                if (mapgrid[w, z] == -1)
+                {
+                    mapgrid[w, z] = -3;
+                }
+                else
+                {
+                    mapgrid[w, z] = -2;
+                }
+                   
+            }
 
-                int result = mapgrid[w, h]; 
+            z += Random.Range(5, 20);
+            if (z >= mapHeight) break;
+        }
+
+
+
+
+       //GEN CITY
+        for (int h = 0; h < mapHeight; h++)
+        {
+            for (int w = 0; w < mapWidth; w++)
+            { 
+                   int result = mapgrid[w, h];
+                 
                 Vector3 pos = new Vector3(w * buildingFootprint, 0, h * buildingFootprint);
 
                 if(result < -2)
@@ -64,6 +89,8 @@ public class BuildCity : MonoBehaviour
                 {
                     Instantiate(zstreets, pos, zstreets.transform.rotation);
                 }
+
+
                 else if (result < 2)
 
                     Instantiate(buildings[0], pos, Quaternion.identity);  //Instantiate Number of buildings Postion and Rotations

@@ -193,7 +193,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 4e-45}
+  m_BoundingSphereOverride: {x: 4.3e-44, y: 1.1754945e-38, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -423,8 +423,13 @@ MonoBehaviour:
   - {fileID: 189348, guid: d597a8fa6b192c545bbae896e4d42a21, type: 3}
   - {fileID: 117616, guid: b2fcb4869e568194ebff11fc13530282, type: 3}
   - {fileID: 5032185114424027244, guid: 4c7c18e637160de4cbf5001a9c15ac79, type: 3}
-  mapWidth: 200
-  mapHeight: 200
+  xstreets: {fileID: 4607300807374259325, guid: a54b7cecfbcfc3c4795668b09f6e6394,
+    type: 3}
+  zstreets: {fileID: 613339295199930825, guid: 7f325dfdd662ecb4fbe622cac8b7a4a7, type: 3}
+  crossroad: {fileID: 1611864644493024424, guid: 96b36a7edfdef284b8fbaec74b93a7f5,
+    type: 3}
+  mapWidth: 100
+  mapHeight: 100
   buildingFootprint: 3
 --- !u!4 &1239829320
 Transform:
