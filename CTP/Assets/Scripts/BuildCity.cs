@@ -21,8 +21,9 @@ public class BuildCity : MonoBehaviour
     private float seed;
     private void Awake()
     {
-         CityGen();
-        GenerateRoad();
+          GenerateRoad();
+        CityGen();
+       
     }
     private void Start()
     {

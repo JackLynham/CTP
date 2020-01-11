@@ -7,7 +7,7 @@ public class RoadCollision : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Road"))
+        if (other.gameObject.CompareTag("Buildings"))
         {
             Destroy(other.gameObject);
         }
