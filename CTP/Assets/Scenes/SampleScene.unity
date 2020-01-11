@@ -193,7 +193,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.3e-44, y: 1.1754945e-38, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 4e-45}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -229,7 +229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &846363217
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -423,14 +423,17 @@ MonoBehaviour:
   - {fileID: 189348, guid: d597a8fa6b192c545bbae896e4d42a21, type: 3}
   - {fileID: 117616, guid: b2fcb4869e568194ebff11fc13530282, type: 3}
   - {fileID: 5032185114424027244, guid: 4c7c18e637160de4cbf5001a9c15ac79, type: 3}
-  xstreets: {fileID: 4607300807374259325, guid: a54b7cecfbcfc3c4795668b09f6e6394,
+  xstreets: {fileID: 4445265921082816157, guid: 391fe6c23e395684dbb188282d684f4c,
     type: 3}
-  zstreets: {fileID: 613339295199930825, guid: 7f325dfdd662ecb4fbe622cac8b7a4a7, type: 3}
-  crossroad: {fileID: 1611864644493024424, guid: 96b36a7edfdef284b8fbaec74b93a7f5,
+  zstreets: {fileID: 2694743947589489600, guid: 11982aa16cf86374c88e44cd93212a35,
     type: 3}
-  mapWidth: 100
-  mapHeight: 100
+  crossroad: {fileID: 2586990770755471316, guid: 021d943aa3fc2f2409c1775cc67d9537,
+    type: 3}
+  mapWidth: 30
+  mapHeight: 30
   buildingFootprint: 3
+  RandWidth: 3
+  RandHeight: 3
 --- !u!4 &1239829320
 Transform:
   m_ObjectHideFlags: 0
