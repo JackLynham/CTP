@@ -91,7 +91,6 @@ GameObject:
   - component: {fileID: 2395094}
   - component: {fileID: 20565396}
   - component: {fileID: 5681449740535105573}
-  - component: {fileID: -501797678425102929}
   - component: {fileID: 5352000844053682339}
   m_Layer: 0
   m_Name: urb_bui_1_lod0
@@ -197,23 +196,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141268}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.78, y: 3.1087408, z: 2.6444068}
   m_Center: {x: 0, y: 1.5543704, z: 0.07220334}
---- !u!114 &-501797678425102929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e224fabcb3ad72f4ebdcc5bbe97869a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &5352000844053682339
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -226,7 +213,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 36
   m_CollisionDetection: 0

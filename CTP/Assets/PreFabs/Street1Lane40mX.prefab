@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4607300807373232253}
   - component: {fileID: 4607300807372266173}
   - component: {fileID: 4607300807366850493}
+  - component: {fileID: -7009949966625529606}
   m_Layer: 0
   m_Name: Street1Lane40mX
   m_TagString: Untagged
@@ -99,3 +100,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &-7009949966625529606
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4607300807374259325}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.699995, y: 40.000008, z: 0.3}
+  m_Center: {x: -0.0000009536743, y: 0.00000667572, z: 0.15}

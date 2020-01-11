@@ -91,7 +91,6 @@ GameObject:
   - component: {fileID: 2360072}
   - component: {fileID: 20539592}
   - component: {fileID: 3544469332592543848}
-  - component: {fileID: 7551359927648669133}
   - component: {fileID: 8570069411229988272}
   m_Layer: 0
   m_Name: urb_bui_2_lod0
@@ -197,23 +196,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147108}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.605, y: 4.849883, z: 2.0431867}
   m_Center: {x: 0, y: 2.4249415, z: 0}
---- !u!114 &7551359927648669133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e224fabcb3ad72f4ebdcc5bbe97869a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &8570069411229988272
 Rigidbody:
   m_ObjectHideFlags: 0
