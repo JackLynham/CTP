@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 2572942441875344618}
   - component: {fileID: 8847571462795731297}
   - component: {fileID: 8245136434628625637}
-  - component: {fileID: 8018438746213826554}
-  - component: {fileID: 4610791806253495987}
   m_Layer: 0
   m_Name: crossroad 1
   m_TagString: Road
@@ -53,7 +51,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2586990770755471316}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -125,27 +123,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8018438746213826554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2586990770755471316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bb0be8bb7c762449bcbd5c848d83d20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4610791806253495987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2586990770755471316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bb0be8bb7c762449bcbd5c848d83d20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
