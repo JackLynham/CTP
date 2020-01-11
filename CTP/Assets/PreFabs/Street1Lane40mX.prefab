@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 4607300807373232253}
   - component: {fileID: 4607300807372266173}
   - component: {fileID: 4607300807366850493}
+  - component: {fileID: 6945383056065347540}
+  - component: {fileID: -1265516761141321314}
+  - component: {fileID: -5017104386734748434}
   m_Layer: 0
   m_Name: Street1Lane40mX
   m_TagString: Untagged
@@ -99,3 +102,44 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &6945383056065347540
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4607300807374259325}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.699995, y: 40.000008, z: 0.3}
+  m_Center: {x: -0.0000009536743, y: 0.00000667572, z: 0.15}
+--- !u!114 &-1265516761141321314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4607300807374259325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bbcbcf1a412e9c40b966852d1e3c260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &-5017104386734748434
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4607300807374259325}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

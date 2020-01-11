@@ -14,9 +14,12 @@ public class BuildCity : MonoBehaviour
     int[,] mapgrid;
     public int buildingFootprint = 3;
 
+    int result;
+    Vector3 pos;
+
     void Start()
     {
-        int seed = Random.Range(0,100);
+        int seed = Random.Range(0, 100);
         Debug.Log(seed);
         //GENERATE MAP DATA
         mapgrid = new int[mapWidth, mapHeight]; // We want to create a grid the is aware of the Size of the grid
@@ -45,7 +48,7 @@ public class BuildCity : MonoBehaviour
 
         //CROSSROADS
         int z = 0;
-        for(int n = 0; n < 10 ;n++)
+        for (int n = 0; n < 10; n++)
         {
             for (int w = 0; w < mapWidth; w++)
             {
@@ -57,30 +60,34 @@ public class BuildCity : MonoBehaviour
                 {
                     mapgrid[w, z] = -2;
                 }
-                   
+
             }
 
             z += Random.Range(5, 20);
             if (z >= mapHeight) break;
         }
+       
 
+        GenCity();
 
+    }
 
-
-       //GEN CITY
+    public void GenCity()
+    {
+        //GEN CITY
         for (int h = 0; h < mapHeight; h++)
         {
             for (int w = 0; w < mapWidth; w++)
-            { 
-                   int result = mapgrid[w, h];
-                 
-                Vector3 pos = new Vector3(w * buildingFootprint, 0, h * buildingFootprint);
+            {
+                result = mapgrid[w, h];
 
-                if(result < -2)
+                pos = new Vector3(w * buildingFootprint, 0, h * buildingFootprint);
+
+                if (result < -2)
                 {
-                    Instantiate(crossroad,pos,crossroad.transform.rotation);
+                    Instantiate(crossroad, pos, crossroad.transform.rotation);
                 }
-                else if(result < -1)
+                else if (result < -1)
                 {
                     Instantiate(xstreets, pos, xstreets.transform.rotation);
                 }
@@ -89,11 +96,13 @@ public class BuildCity : MonoBehaviour
                 {
                     Instantiate(zstreets, pos, zstreets.transform.rotation);
                 }
+                
 
-
-                else if (result < 2)
-
-                    Instantiate(buildings[0], pos, Quaternion.identity);  //Instantiate Number of buildings Postion and Rotations
+                if (result < 2)
+                {
+  
+                    Instantiate(buildings[0], pos, Quaternion.identity); //Instantiate Number of buildings Postion and Rotations
+                }
 
                 else if (result < 3)
 
@@ -120,6 +129,7 @@ public class BuildCity : MonoBehaviour
 
     }
 
+   
 
 
 }
