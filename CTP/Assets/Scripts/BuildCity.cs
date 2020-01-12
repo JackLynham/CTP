@@ -141,30 +141,76 @@ public class BuildCity : MonoBehaviour
 
                 int result = (int)(Mathf.PerlinNoise(w / 10.0f + seed, h / 10.0f + seed) * 10);  // Needs a Height and width in this Function
                 Vector3 pos = new Vector3(w * buildingFootprint, 0, h * buildingFootprint);
-                if (result < 2)
 
-                    Instantiate(buildings[0], pos, Quaternion.identity);  //Instantiate Number of buildings Postion and Rotations
+                if (result < 0.5)
 
-                else if (result < 3)
+                    Instantiate(buildings[0], pos, Quaternion.identity);                                             //Instantiate Number of buildings Postion and Rotations
+
+                else if (result < 1)
 
                     Instantiate(buildings[1], pos, Quaternion.identity);
 
-                else if (result < 5)
+                else if (result < 1.5)
 
                     Instantiate(buildings[2], pos, Quaternion.identity);
 
-                else if (result < 6)
+                else if (result < 2)
 
                     Instantiate(buildings[3], pos, Quaternion.identity);
 
-                else if (result < 7)
+                else if (result < 2.5)
 
                     Instantiate(buildings[4], pos, Quaternion.identity);
 
-                else if (result < 10)
+                else if (result < 3)
 
                     Instantiate(buildings[5], pos, Quaternion.identity);
 
+                else if (result < 3.5)
+
+                    Instantiate(buildings[6], pos, Quaternion.identity);
+
+                else if (result < 4)
+
+                    Instantiate(buildings[7], pos, Quaternion.identity);
+
+                else if (result < 4.5)
+
+                    Instantiate(buildings[8], pos, Quaternion.identity);
+
+                else if (result < 5)
+
+                    Instantiate(buildings[9], pos, Quaternion.identity);
+
+                else if (result < 5.5)
+
+                    Instantiate(buildings[10], pos, Quaternion.identity);
+
+                else if (result < 6)
+
+                    Instantiate(buildings[11], pos, Quaternion.identity);
+
+                else if (result < 6.5)
+
+                    Instantiate(buildings[12], pos, Quaternion.identity);
+
+                else if (result < 7)
+
+                    Instantiate(buildings[13], pos, Quaternion.identity);
+
+                else if (result < 7.5)
+
+                    Instantiate(buildings[14], pos, Quaternion.identity);
+
+                else if (result < 8)
+
+                    Instantiate(buildings[15], pos, Quaternion.identity);
+
+                else if (result < 8.5)
+
+                    Instantiate(buildings[16], pos, Quaternion.identity);
+
+              
 
 
             }
