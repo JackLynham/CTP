@@ -428,8 +428,8 @@ MonoBehaviour:
   zstreets: {fileID: 613339295199930825, guid: 7f325dfdd662ecb4fbe622cac8b7a4a7, type: 3}
   crossroad: {fileID: 1611864644493024424, guid: 96b36a7edfdef284b8fbaec74b93a7f5,
     type: 3}
-  mapWidth: 100
-  mapHeight: 100
+  mapWidth: 60
+  mapHeight: 60
   buildingFootprint: 3
 --- !u!4 &1239829320
 Transform:
