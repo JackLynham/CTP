@@ -14,6 +14,9 @@ public class BuildCity : MonoBehaviour
     int[,] mapgrid;
     public int buildingFootprint = 3;
 
+    public bool test;
+
+    //Values for Generation 
     int result;
     Vector3 pos;
 
@@ -70,6 +73,7 @@ public class BuildCity : MonoBehaviour
 
         GenRoads();
         GenBuildings();
+      //  br.LookAt();
 
     }
 
@@ -97,37 +101,11 @@ public class BuildCity : MonoBehaviour
                 {
                     Instantiate(zstreets, pos, zstreets.transform.rotation);
                 }
-                
-
-                //if (result < 2)
-                //{
-  
-                //    Instantiate(buildings[0], pos, Quaternion.identity); //Instantiate Number of buildings Postion and Rotations
-                //}
-
-                //else if (result < 3)
-
-                //    Instantiate(buildings[1], pos, Quaternion.identity);
-
-                //else if (result < 5)
-
-                //    Instantiate(buildings[2], pos, Quaternion.identity);
-
-                //else if (result < 6)
-
-                //    Instantiate(buildings[3], pos, Quaternion.identity);
-
-                //else if (result < 7)
-
-                //    Instantiate(buildings[4], pos, Quaternion.identity);
-
-                //else if (result < 10)
-
-                //    Instantiate(buildings[5], pos, Quaternion.identity);
+               
             }
         }
 
-
+       
     }
 
     public void GenBuildings()
@@ -210,12 +188,24 @@ public class BuildCity : MonoBehaviour
 
                     Instantiate(buildings[16], pos, Quaternion.identity);
 
-              
+               test = true;
 
 
             }
 
         }
     }
+
+
+//    public void LookAt()
+//    {
+       
+//        // Store the other object's position in a temporary variable
+//        var temp = xstreets.transform.position;
+//        // Deflate it's x and z coordinate
+//        temp.x = temp.z = uint.MinValue;
+//        var lookRotation = Quaternion.LookRotation(temp);
+//        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Damping * Time.deltaTime);
+//    }
 }
 

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -6607847227902185751}
   m_Layer: 0
   m_Name: Street1LaneZ
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

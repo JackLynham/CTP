@@ -193,7 +193,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.3e-44, y: 1.1754945e-38, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -211,6 +211,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &812118363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 812118365}
+  - component: {fileID: 812118364}
+  m_Layer: 0
+  m_Name: Temp ref
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &812118364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812118363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc9ec892d650b5e49b390111ee32c154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &812118365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812118363}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 31.39014, y: -12.196234, z: 21.832409}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &846363216
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,7 +304,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -423,13 +466,24 @@ MonoBehaviour:
   - {fileID: 189348, guid: d597a8fa6b192c545bbae896e4d42a21, type: 3}
   - {fileID: 117616, guid: b2fcb4869e568194ebff11fc13530282, type: 3}
   - {fileID: 5032185114424027244, guid: 4c7c18e637160de4cbf5001a9c15ac79, type: 3}
+  - {fileID: 9102461184819077462, guid: ef5a4dcf89e22844aace4c50b16147e3, type: 3}
+  - {fileID: 3543400681027859690, guid: f558be46e493e784e9e7ebc31d965c0a, type: 3}
+  - {fileID: 2832004840353701587, guid: 90b5a73611fb5dc4292669cc1c69c1f2, type: 3}
+  - {fileID: 3490554806680108978, guid: ba91fa1e81d4f5b40b367c573a7155b7, type: 3}
+  - {fileID: 3755769501893465695, guid: 5e22c0d20397bad4a86a00812ee3c423, type: 3}
+  - {fileID: 5931006897894463784, guid: 80ca27c92fb88914994a4ff12b743b6d, type: 3}
+  - {fileID: 6811830607284396799, guid: f90c34c521797ea409c80d9aec8ed718, type: 3}
+  - {fileID: 6768663758406227406, guid: 21c47f50f57c11a4c855dfd084105f41, type: 3}
+  - {fileID: 4125843724188622798, guid: a6e856c555ca3c64dbc92e30c732964e, type: 3}
+  - {fileID: 4341648061141566387, guid: 13adf98e06c2b8346917bb6d7a341555, type: 3}
+  - {fileID: 5619231361399984532, guid: a7ab92e5467cd4b4ca2738ba4efbdc33, type: 3}
   xstreets: {fileID: 4607300807374259325, guid: a54b7cecfbcfc3c4795668b09f6e6394,
     type: 3}
   zstreets: {fileID: 613339295199930825, guid: 7f325dfdd662ecb4fbe622cac8b7a4a7, type: 3}
   crossroad: {fileID: 1611864644493024424, guid: 96b36a7edfdef284b8fbaec74b93a7f5,
     type: 3}
-  mapWidth: 60
-  mapHeight: 60
+  mapWidth: 20
+  mapHeight: 20
   buildingFootprint: 3
 --- !u!4 &1239829320
 Transform:
